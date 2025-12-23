@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Start your website project with Flux Web Studio. Get a quote and begin building your professional online presence.">
+    <title>Contact & Start Your Project | Flux Web Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand-logo">Flux Web Studio</a>
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="templates.html" class="nav-link">Templates</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </nav>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header page-header-contact">
+        <div class="page-header-overlay page-header-overlay-contact"></div>
+        <div class="container">
+            <h1>Get in touch</h1>
+            <p class="page-intro">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                
+                <!-- Form Column -->
+                <div class="form-column">
+                    <!-- Email CTA -->
+                    <div class="email-cta-box">
+                        <h3>Send us an email</h3>
+                        <p>The fastest way to reach us:</p>
+                        <a href="mailto:hello@fluxwebstudio.com" class="btn btn-primary btn-full-width">Email us</a>
+                    </div>
+
+                    <!-- Or contact form divider -->
+                    <div class="form-divider">
+                        <span>Or use the form below</span>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/mqezgwrl" method="POST" novalidate>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                            <span class="error-message" id="nameError" role="alert" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                            <span class="error-message" id="emailError" role="alert" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject <span class="required">*</span></label>
+                            <input type="text" id="subject" name="subject" required aria-required="true">
+                            <span class="error-message" id="subjectError" role="alert" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required aria-required="true" placeholder="Please share your message here (minimum 10 characters)"></textarea>
+                            <span class="error-message" id="messageError" role="alert" aria-live="polite"></span>
+                        </div>
+
+                        <!-- Honeypot field (hidden) -->
+                        <div class="form-group honeypot-field" aria-hidden="true">
+                            <label for="website">Website</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <!-- Status message -->
+                        <div id="formStatus" class="form-status-message" role="status" aria-live="polite" aria-atomic="true"></div>
+
+                        <button type="submit" class="btn btn-primary btn-full-width">Send Message</button>
+
+                    </form>
+
+                </div>
+
+                <!-- Info Column -->
+                <div class="info-column">
+                    <div class="contact-info-box">
+                        <h3>Email</h3>
+                        <p><a href="mailto:hello@fluxwebstudio.com">hello@fluxwebstudio.com</a></p>
+                        <p class="contact-note">Direct email is often the fastest way to reach us. We respond within 24–48 hours.</p>
+                    </div>
+
+                    <div class="contact-info-box">
+                        <h3>What to expect</h3>
+                        <p>We'll read your message, understand your needs, and get back to you with clear next steps. No sales pressure, no spam.</p>
+                    </div>
+
+                    <div class="contact-info-box">
+                        <h3>Privacy</h3>
+                        <p>Your information is safe with us. We never share or sell your data. Your message goes directly to our team.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Response Section -->
+    <section class="reassurance-section">
+        <div class="container">
+            <div class="reassurance-content">
+                <h2>How we respond</h2>
+                <div class="reassurance-grid">
+                    <div class="reassurance-item">
+                        <h3>Quick replies</h3>
+                        <p>We typically respond within 24–48 hours of receiving your message.</p>
+                    </div>
+                    <div class="reassurance-item">
+                        <h3>Clear communication</h3>
+                        <p>We answer your questions directly and transparently, no jargon.</p>
+                    </div>
+                    <div class="reassurance-item">
+                        <h3>Professional approach</h3>
+                        <p>Every inquiry is important to us and deserves a thoughtful response.</p>
+                    </div>
+                    <div class="reassurance-item">
+                        <h3>Your privacy matters</h3>
+                        <p>We never share your information or add you to unwanted mailing lists.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <p class="brand-tagline">Professional websites that grow with you.</p>
+                </div>
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="templates.html">Templates</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="footer-contact">
+                    <p>Email: <a href="mailto:hello@fluxwebstudio.com">hello@fluxwebstudio.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flux Web Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
